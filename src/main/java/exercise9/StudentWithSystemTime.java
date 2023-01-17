@@ -10,7 +10,7 @@ public class StudentWithSystemTime implements Learner {
         this.learner = learner;
     }
 
-    String systemTime = DateTimeFormatter.ofPattern("dd MMM yyyy, hh:mm:ss").format(LocalDateTime.now());
+    String systemTime = DateTimeFormatter.ofPattern("dd MMM yyyy, HH:mm:ss").format(LocalDateTime.now());
 
     @Override
     public void learn() {
